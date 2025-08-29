@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Buds</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+   <!-- My Site Css -->
+   <link rel="stylesheet" href="components/header/header.css">
+   <link rel="stylesheet" href="components/body/body.css">
+   <link rel="stylesheet" href="components/footer/footer.css">
+
+  <!-- Bootstrap JS -->
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- AngularJS -->
+  <script src="assets/js/angular.min.js"></script>
+  <script src="assets/js/angular-route.min.js"></script>
+
+  <!-- Your Angular App -->
+  <script src="app.js"></script>
+  <script src="components/header/header.controller.js"></script>
+  <script src="components/footer/footer.controller.js"></script>
+  <script src="components/body/body.controller.js"></script>
+
+</head>
+<body>
+  <div ng-include="'components/header/header.html'" ng-controller="HeaderController"></div>
+  <div ng-include="'components/body/body.html'" ng-controller="BodyController"></div> 
+  <div ng-include="'components/footer/footer.html'" ng-controller="FooterController"></div>  
+</body>
+</html>
